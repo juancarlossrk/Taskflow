@@ -1,5 +1,5 @@
 # TaskFlow
-
+Alumno: Juan Carlos Herrera Bernuy
 Gestor de tareas en Python · Proyecto integrador DevOps & Project Management.
 
 **Repositorio:** https://github.com/TU_USUARIO/taskflow  
