@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TaskFlow, proyecto integrador DevOps: Python, GitHub Actions, GitHub Pages y Jira.">
+<title>TaskFlow | DevOps</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,sans-serif;color-scheme:dark;background:#0a1024;color:#eaf0ff}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1080px;margin:auto;padding:30px 24px}header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2a3c63}a{color:#a4b5ff}.logo{font-size:1.2rem;font-weight:900}.logo span{color:#7d9dff}nav a{margin-left:16px}.hero{padding:76px 0 42px}.eyebrow{color:#77dfc2;letter-spacing:.14em;font-weight:700;font-size:.8rem}h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.05;margin:12px 0}h1 span{color:#8aa8ff}p{color:#bac9e6;line-height:1.65}.lead{font-size:1.18rem;max-width:680px}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.button{border:1px solid #6077bf;border-radius:11px;padding:12px 18px;text-decoration:none;background:#304fba;color:white}.button.secondary{background:transparent}section{padding:26px 0}h2{font-size:1.7rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.card{background:#141e3b;border:1px solid #2c3d62;border-radius:16px;padding:24px}.card h3{margin:8px 0}.pill{display:inline-block;border-radius:99px;background:#173b43;color:#79ead1;font-size:.75rem;padding:6px 10px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.stat{border:1px solid #2c3d62;border-radius:14px;padding:18px;background:#141e3b}.stat strong{font-size:1.7rem;display:block}.stat small{color:#a9bbdc}.progress{height:12px;background:#314066;border-radius:99px;overflow:hidden}.progress>div{width:100%;height:100%;background:linear-gradient(90deg,#54b6fa,#62e4aa)}code{background:#1e2a4d;padding:4px 7px;border-radius:5px}footer{border-top:1px solid #2c3d62;color:#9caed0}@media(max-width:530px){.stats{grid-template-columns:repeat(2,1fr)}nav a{margin-left:8px}}
+</style>
+</head>
+<body>
+<header><div class="logo">◆ Task<span>Flow</span></div><nav><a href="#funciones">Funciones</a><a href="#avance">Avance</a><a href="#tecnologias">Stack</a></nav></header>
+<main>
+<section class="hero"><div class="eyebrow">PROYECTO INTEGRADOR · DEVOPS</div><h1>Organiza tareas.<br><span>Automatiza calidad.</span></h1><p class="lead">Gestor de tareas en Python, con pruebas automatizadas en tres versiones, flujo de colaboración en GitHub y publicación continua en Pages.</p><div class="buttons"><a class="button" id="repo" href="#">Ver repositorio ↗</a><a class="button secondary" href="#avance">Ver avance del proyecto ↓</a></div><p><small>La aplicación de tareas funciona en la terminal con <code>python -m taskflow</code>. Esta web es la página informativa del proyecto.</small></p></section>
+<section id="funciones"><h2>Funcionalidades</h2><div class="grid">
+<article class="card"><span class="pill">TF-4 / TF-5</span><h3>Gestión de tareas</h3><p>Registrar, completar, listar y eliminar tareas con prioridades.</p></article>
+<article class="card"><span class="pill">TF-8</span><h3>Filtro inteligente</h3><p>Mostrar únicamente las tareas de prioridad alta, media o baja.</p></article>
+<article class="card"><span class="pill">TF-9</span><h3>Búsqueda</h3><p>Buscar fragmentos de títulos sin distinguir mayúsculas.</p></article>
+<article class="card"><span class="pill">TF-10 / TF-11</span><h3>Progreso y calidad</h3><p>Resumen porcentual y prevención de títulos duplicados.</p></article>
+</div></section>
+<section id="avance"><h2>Estado de implementación del código</h2><p>Indicadores de funcionalidades implementadas en la plantilla. <strong>No equivalen al burndown ni al cierre de Jira</strong>; las métricas reales del sprint deben incorporarse después.</p><div class="stats"><div class="stat"><strong>4/4</strong><small>TF-8 a TF-11 implementadas</small></div><div class="stat"><strong>24</strong><small>Pruebas unitarias incluidas</small></div><div class="stat"><strong>3</strong><small>Versiones de Python en CI</small></div><div class="stat"><strong>v1.0</strong><small>Versión de la plantilla</small></div></div><p>Implementación de funcionalidades</p><div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Funcionalidades implementadas"><div></div></div><p>Jira, Pull Requests, métricas y revisiones: pendientes de registrar en tu cuenta.</p></section>
+<section id="tecnologias"><h2>Tecnologías</h2><div class="grid"><div class="card"><h3>Python + Pytest</h3><p>Lógica de negocio y pruebas.</p></div><div class="card"><h3>Git + GitHub</h3><p>Control de versiones, ramas y PRs.</p></div><div class="card"><h3>GitHub Actions</h3><p>CI y despliegue automático condicionado a las pruebas.</p></div><div class="card"><h3>Jira</h3><p>Backlog, Sprint Goal y trazabilidad.</p></div></div></section>
+</main><footer><p>TaskFlow · Proyecto académico DevOps · Personaliza los enlaces, tu equipo y las métricas reales antes de entregar.</p></footer>
+<script>
+const owner=location.hostname.endsWith('.github.io')?location.hostname.split('.')[0]:null;
+const repo=document.getElementById('repo');
+if(owner){repo.href=`https://github.com/${encodeURIComponent(owner)}/taskflow`;}
+else {repo.removeAttribute('href');repo.textContent='Disponible al publicar en GitHub';}
+</script>
+</body></html>
